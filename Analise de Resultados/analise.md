@@ -191,7 +191,7 @@ Explique quais foram os objetivos específicos dos seus experimentos. Por exempl
 ### Referências
 - E. Falkenauer and A. Delchambre, "A genetic algorithm for bin packing and line balancing," Proceedings 1992 IEEE International Conference on Robotics and Automation, Nice, France, 1992, pp. 1186-1192 vol.2, doi: 10.1109/ROBOT.1992.220088. keywords: {Genetic algorithms;Cost function;Workstations;Polynomials;EMTP;Electrical capacitance tomography;Production;Assembly;Ear},
 
-- 
+- Zakaria, Zendaoui & Layeb, Abdesslem. (2016). Adaptive Cuckoo Search Algorithm for the Bin Packing Problem. 10.1007/978-3-319-33410-3_8. 
 
 ### Anexos
 
