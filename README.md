@@ -62,8 +62,6 @@ Os objetivos dos experimentos realizados são:
 
 ### Instâncias de Teste
 
-- **Descrição das Instâncias:**
-  - As instancias usadas eu nao sei quais foram ainda
 - **Detalhes dos Dados:**
   - Os dados foram obtidos do dataset [BPPLIB](https://site.unibo.it/operations-research/en/research/bpplib-a-bin-packing-problem-library).
 
@@ -99,6 +97,13 @@ Os objetivos dos experimentos realizados são:
 
 - **Avaliação da Proximidade:**
   Analisamos a proximidade de cada algoritmo em relação à solução ótima obtida pelo Gurobi. Para essa avaliação, utilizamos o banco de dados BPPLIB, que contém instâncias de problemas de bin packing. A comparação nos permite identificar quão próximos os resultados dos algoritmos Cuckoo Search e Algoritmo Genético estão das soluções ótimas, além de fornecer uma perspectiva sobre a eficiência e a eficácia das abordagens heurísticas em relação às soluções exatas.
+
+### Tempo de Execução
+| N    | Tempo (SA) | Tempo (GA) | Tempo (CS)  |
+|------|------------|------------|-------------|
+| 250  | 0.123s     | 0.098s     |  0.910s     |
+| 500  | 0.234s     | 0.210s     |  3.200s     |
+| 1000 | 0.450s     | 0.390s     | 65.000s     |
 
 ## 6. Discussão dos Resultados
 
