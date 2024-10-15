@@ -12,3 +12,17 @@ Partindo do pressuposto que temos um número ilimitado de caixas disponíveis, o
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a59e4492-0385-4152-ad9a-d968d50022d8" alt="Solução Otima" width="500"/>
 </p>
+
+---
+
+## Time: Iago_123 não sabe falar fluxo em inglês
+
+### Ricardo Vieira Chagas
+<p Ricardo>
+  <img src="https://avatars.githubusercontent.com/u/103327245?v=4" alt="ricaxov" width="50"/>
+</p>
+
+### Iago de Souza Lopes
+<p>
+  <img src="https://avatars.githubusercontent.com/u/105664489?s=48&v=4" alt="iago_123" width="50"/>
+</p>
