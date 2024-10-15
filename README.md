@@ -79,83 +79,58 @@ Os objetivos dos experimentos realizados são:
 
 ## 4. Apresentação dos Resultados
 
-### Dados Brutos
+### Gráficos
 
-- **Tabelas de Resultados:**
-  - Apresentar os dados de forma clara e organizada.
-- **Gráficos:**
-  - Utilizar gráficos para ilustrar os dados de forma visual, facilitando a análise comparativa.
-
-### Estatísticas
-
-- **Métricas Calculadas:**
-  - Média dos resultados obtidos.
-  - Desvio padrão.
-  - Intervalos de confiança.
+![WhatsApp Image 2024-10-15 at 17 25 24](https://github.com/user-attachments/assets/d3c50d5e-ec48-4fd3-9fa3-0022277408c8)
+![WhatsApp Image 2024-10-15 at 17 26 03](https://github.com/user-attachments/assets/7170d246-cb17-4700-aab3-e77b2b80b624)
+![WhatsApp Image 2024-10-15 at 17 28 57](https://github.com/user-attachments/assets/9c39cebd-ce18-4c13-8acb-c8a76193bcf4)
 
 ## 5. Análise Comparativa
 
 ### Comparação com Outras Metaheurísticas
 
 - **Algoritmos Comparados:**
-  - Comparar o desempenho do GA, Cuckoo e SA+Bisecção.
-- **Discussão dos Resultados:**
-  - Analisar as semelhanças e diferenças nos resultados obtidos pelos diferentes algoritmos.
-
-### Comparação com Soluções Ótimas ou Heurísticas
+  - Para conjuntos de dados maiores, é notável que tanto o Cuckoo Search quanto o Algoritmo Genético (GA) apresentaram desempenho inferior ao do Simulated Annealing (SA) com bisecção. No entanto, em conjuntos de dados menores, ambos os métodos se destacam em comparação ao SA com bisecção.
+  
+### Comparação com Soluções Óptimas ou Heurísticas
 
 - **Soluções de Referência:**
-  - Apresentar soluções ótimas conhecidas.
+  Utilizamos o Gurobi, um solver de programação matemática de alto desempenho, para obter soluções ótimas conhecidas para o problema de bin packing. Essas soluções servem como referência para avaliar a eficácia dos algoritmos implementados.
+
 - **Avaliação da Proximidade:**
-  - Discutir quão próximo cada algoritmo se aproxima da solução ótima.
+  Analisamos a proximidade de cada algoritmo em relação à solução ótima obtida pelo Gurobi. Para essa avaliação, utilizamos o banco de dados BPPLIB, que contém instâncias de problemas de bin packing. A comparação nos permite identificar quão próximos os resultados dos algoritmos Cuckoo Search e Algoritmo Genético estão das soluções ótimas, além de fornecer uma perspectiva sobre a eficiência e a eficácia das abordagens heurísticas em relação às soluções exatas.
 
 ## 6. Discussão dos Resultados
 
 ### Interpretação
 
 - **Significado dos Resultados:**
-  - Explicar o que os resultados indicam sobre o desempenho dos algoritmos.
+  Os resultados indicam que os desempenhos dos algoritmos utilizados foram satisfatórios, considerando os tempos de execução envolvidos. 
+
 - **Padrões Observados:**
-  - Identificar padrões consistentes nas execuções.
+  Identificamos padrões consistentes nas execuções, onde o desempenho dos algoritmos tende a melhorar à medida que o tamanho do problema diminui. Além disso, a variação nos resultados entre as diferentes execuções sugere que a aleatoriedade dos algoritmos pode influenciar os resultados, mas ainda assim, mantém uma qualidade satisfatória.
 
 ### Limitações
 
-- **Desafios Enfrentados:**
-  - Citar dificuldades como problemas de escala e tempo computacional elevado.
 - **Qualidade das Soluções:**
-  - Avaliar possíveis limitações na qualidade das soluções geradas.
+  A qualidade das soluções geradas pode ser afetada pela escolha inadequada de hiperparâmetros e pela parametrização dos algoritmos. A seleção de parâmetros como taxa de mutação, número de gerações e tamanho da população teve um impacto significativo na eficiência e na eficácia dos algoritmos, indicando que uma otimização cuidadosa desses hiperparâmetros é essencial para melhorar os resultados.
 
 ## 7. Comparação com Objetivos Iniciais
 
 ### Alcançou os Objetivos?
 
 - **Avaliação:**
-  - Avaliar se os objetivos dos experimentos foram atingidos.
+  Após a realização dos experimentos, podemos afirmar que os objetivos propostos foram, em grande parte, atingidos. Os algoritmos implementados foram capazes de encontrar soluções competitivas para o problema de bin packing, e a comparação com soluções ótimas revelou a eficácia das abordagens adotadas.
+
 - **Justificativas:**
-  - Explicar por que os objetivos foram ou não alcançados.
+  Os objetivos foram alcançados principalmente devido à implementação cuidadosa dos algoritmos e à utilização do Gurobi como referência para soluções ótimas. No entanto, alguns objetivos poderiam ter sido melhor atingidos se tivéssemos realizado uma otimização mais rigorosa dos hiperparâmetros e explorado mais a hibridização entre os algoritmos.
 
 ### Surpresas ou Descobertas
 
 - **Resultados Inesperados:**
-  - Mencionar achados inesperados e possíveis insights decorrentes.
+  Um achado surpreendente foi a qualidade das soluções obtidas pelo Simulated Annealing (SA) com bisecção, que superou as expectativas iniciais. Esse desempenho destaca o potencial dessa abordagem em cenários específicos. Para aprimorar ainda mais os resultados, consideramos que uma melhor parametrização e a hibridização entre os algoritmos poderiam levar a melhorias significativas na qualidade das soluções encontradas.
 
-## 8. Sugestões para Trabalhos Futuros
-
-### Melhorias Potenciais
-
-- **Otimizações:**
-  - Sugerir possíveis melhorias nos algoritmos ou na metodologia.
-- **Novos Experimentos:**
-  - Propor experimentos adicionais que poderiam ser explorados.
-
-### Aplicações
-
-- **Outros Contextos:**
-  - Discutir possíveis aplicações dos algoritmos em outros problemas.
-- **Expansão do Trabalho:**
-  - Apontar direções futuras para expandir a pesquisa.
-
-## 9. Conclusão
+## 8. Conclusão
 
 ### Síntese dos Achados
 
@@ -171,21 +146,14 @@ Os objetivos dos experimentos realizados são:
 - **Relevância Prática:**
   - Comentar sobre a utilidade prática dos resultados.
 
-## 10. Referências e Anexos
+## 9. Referências e Anexos
 
 ### Referências
 
 - Falkenauer, E., & Delchambre, A. (1992). *A genetic algorithm for bin packing and line balancing.* Proceedings of the 1992 IEEE International Conference on Robotics and Automation, Nice, France, 1186-1192.
 - Zakaria, Z., & Layeb, A. (2016). *Adaptive Cuckoo Search Algorithm for the Bin Packing Problem.* In Computational Intelligence and Optimization Methods for Control Engineering.
 
-### Anexos
-
-- **Dados Adicionais:**
-  - Anexar tabelas ou gráficos adicionais, caso necessário.
-- **Detalhes Técnicos:**
-  - Fornecer informações complementares que possam ajudar na replicação dos experimentos.
-
-## 11. Time
+## 10. Time
 
 ### Iago_123 não sabe falar fluxo em inglês
 
