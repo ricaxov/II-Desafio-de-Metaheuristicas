@@ -4,14 +4,16 @@
 
 Explique quais foram os objetivos específicos dos seus experimentos. Por exemplo:
 
-- Testar a eficiência do algoritmo.
-- Comparar diferentes parâmetros.
-- Avaliar a convergência.
+- Teste da eficiência dos algoritmos GA, Cuckoo, variação do SA, .
+- Teste de diferentes parâmetros para cada um dos algoritmos.
+- Verificar a convergência da solução de cada algoritmo.
+- Avaliação dos trade-offs entre tempo e solução
 
 ## 2. Metodologia dos Experimentos
 
-### Configurações do Algoritmo
+## Configurações dos Algoritmos
 
+### Cuckoo
 - **Parâmetros Utilizados:**
   - Tamanho da população.
   - Taxas de cruzamento e mutação.
@@ -19,7 +21,24 @@ Explique quais foram os objetivos específicos dos seus experimentos. Por exempl
 - **Justificativa das Escolhas:**
   - Explique o motivo da escolha desses parâmetros.
 
-### Instâncias de Teste
+### GA
+- **Parâmetros Utilizados:**
+  - Tamanho da população.
+  - Taxas de cruzamento e mutação.
+  - Número de gerações.
+- **Justificativa das Escolhas:**
+  - Explique o motivo da escolha desses parâmetros.
+
+### teste SA + Método de Bisecção
+- **Parâmetros Utilizados:**
+  - Tamanho da população.
+  - Taxas de cruzamento e mutação.
+  - Número de gerações.
+- **Justificativa das Escolhas:**
+  - Explique o motivo da escolha desses parâmetros.
+
+
+## Instâncias de Teste
 
 - **Descrição das Instâncias:**
   - Tamanho do problema.
@@ -59,7 +78,7 @@ Explique quais foram os objetivos específicos dos seus experimentos. Por exempl
 ### Comparação com Outras Metaheurísticas
 
 - **Algoritmos Comparados:**
-  - Liste os algoritmos usados para comparação.
+  - GA, Cuckoo e SA+Bisecção.
 - **Discussão dos Resultados:**
   - Destaque as diferenças e semelhanças nos resultados.
 
@@ -171,7 +190,8 @@ Explique quais foram os objetivos específicos dos seus experimentos. Por exempl
 
 ### Referências
 
-- Liste todas as fontes e trabalhos citados.
+- 
+- 
 
 ### Anexos
 
