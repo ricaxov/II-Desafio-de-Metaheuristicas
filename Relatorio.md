@@ -6,7 +6,7 @@ Nesse problema são dados um conjunto de $N$ itens. Cada item $i$ possui um peso
 Partindo do pressuposto que temos um número ilimitado de caixas disponíveis, o objetivo do Problema de Empacotamento Unidimensional é empacotar todos os itens nas caixas de forma que o número total de caixas utilizadas seja o menor possível.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1406f897-3bd5-4822-8e70-e228648f9900" alt="Conjunto de Itens" width="500"/>
+  <img src="https://github.com/user-attachments/assets/1406f897-3bd5-4822-8e70-e228648f9900" alt="Conjunto de Itens" width="300"/>
 </p>
 
 <p align="center">
