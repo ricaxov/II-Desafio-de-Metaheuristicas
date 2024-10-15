@@ -200,25 +200,8 @@ Explique quais foram os objetivos específicos dos seus experimentos. Por exempl
 - **Detalhes Técnicos:**
   - Apresente informações adicionais que suportem a análise.
 
----
-
-# Dicas Adicionais
-
-- **Clareza e Objetividade**
-  - Utilize linguagem clara e direta.
-  - Explique termos técnicos quando necessário.
-
-- **Visualização de Dados**
-  - Use gráficos e tabelas para facilitar a compreensão.
-  - Certifique-se de que estejam bem formatados.
-
-- **Consistência**
-  - Mantenha a mesma terminologia e formato ao longo do documento.
-
-- **Crítica Construtiva**
+### Crítica Construtiva
   - Reconheça tanto os pontos fortes quanto as limitações do trabalho.
 
 ---
-
-*Este documento foi estruturado em formato Markdown para facilitar a visualização e edição no GitHub.*
 
