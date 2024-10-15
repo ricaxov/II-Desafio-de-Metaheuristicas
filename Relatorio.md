@@ -5,6 +5,10 @@ Nesse problema são dados um conjunto de $N$ itens. Cada item $i$ possui um peso
 
 Partindo do pressuposto que temos um número ilimitado de caixas disponíveis, o objetivo do Problema de Empacotamento Unidimensional é empacotar todos os itens nas caixas de forma que o número total de caixas utilizadas seja o menor possível.
 
-![Conjunto de Itens](https://github.com/user-attachments/assets/1406f897-3bd5-4822-8e70-e228648f9900)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1406f897-3bd5-4822-8e70-e228648f9900" alt="Conjunto de Itens" width="500"/>
+</p>
 
-![Solução Otima](https://github.com/user-attachments/assets/a59e4492-0385-4152-ad9a-d968d50022d8)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a59e4492-0385-4152-ad9a-d968d50022d8" alt="Solução Otima" width="500"/>
+</p>
