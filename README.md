@@ -90,7 +90,7 @@ Os objetivos dos experimentos realizados são:
 - **Algoritmos Comparados:**
   - Para conjuntos de dados maiores, é notável que tanto o Cuckoo Search quanto o Algoritmo Genético (GA) apresentaram desempenho inferior ao do Simulated Annealing (SA) com bisecção. No entanto, em conjuntos de dados menores, ambos os métodos se destacam em comparação ao SA com bisecção.
   
-### Comparação com Soluções Óptimas ou Heurísticas
+### Comparação com Soluções Ótimas ou Heurísticas
 
 - **Soluções de Referência:**
   Utilizamos o Gurobi, um solver de programação matemática de alto desempenho, para obter soluções ótimas conhecidas para o problema de bin packing. Essas soluções servem como referência para avaliar a eficácia dos algoritmos implementados.
@@ -140,16 +140,24 @@ Os objetivos dos experimentos realizados são:
 ### Síntese dos Achados
 
 - **Resumo:**
-  - Resumir os principais resultados e conclusões obtidas.
-- **Implicações:**
-  - Discutir a importância prática e teórica dos resultados.
+  Os experimentos realizados com os algoritmos Cuckoo Search, Algoritmo Genético e Simulated Annealing (SA) com bisecção indicaram que, para instâncias menores, tanto o Cuckoo Search quanto o Algoritmo Genético apresentaram resultados satisfatórios, com tempos de execução competitivos. No entanto, para instâncias maiores, o SA com bisecção mostrou-se mais eficiente, gerando soluções mais próximas das ótimas conhecidas.
 
-### Impacto
+### Sugestões para Trabalhos Futuros
 
-- **Contribuição para a Área:**
-  - Explicar como o trabalho contribui para o campo de metaheurísticas.
-- **Relevância Prática:**
-  - Comentar sobre a utilidade prática dos resultados.
+- **Otimização de Hiperparâmetros:**
+  Um aspecto a ser explorado em trabalhos futuros é a otimização dos hiperparâmetros dos algoritmos implementados. A escolha dos parâmetros, como o tamanho da população, taxa de mutação e parâmetros de exploração no Cuckoo Search, mostrou ter um impacto significativo nos resultados. Métodos automáticos de ajuste, como busca em grade ou otimização bayesiana, poderiam ser investigados.
+
+- **Hibridização de Algoritmos:**
+  Outro caminho promissor é a hibridização entre algoritmos. A combinação das vantagens do Cuckoo Search, Algoritmo Genético e Simulated Annealing pode gerar abordagens mais robustas, que aproveitem as melhores características de cada técnica para melhorar a qualidade das soluções.
+
+- **Escalabilidade e Paralelização:**
+  Com o aumento da escala das instâncias do problema de bin packing, seria relevante investigar técnicas de paralelização para reduzir o tempo de execução dos algoritmos, especialmente para instâncias maiores.
+
+- **Exploração de Outras Heurísticas:**
+  Trabalhos futuros também poderiam explorar outras heurísticas e metaheurísticas, como Particle Swarm Optimization (PSO) ou Ant Colony Optimization (ACO), para comparar o desempenho com as abordagens implementadas.
+
+- **Aplicações em Problemas Reais:**
+  Por fim, a aplicação desses algoritmos em problemas reais de otimização relacionados a bin packing, como o planejamento logístico ou a alocação de recursos, poderia fornecer insights práticos adicionais e validar a eficácia das soluções encontradas em ambientes do mundo real.
 
 ## 9. Referências e Anexos
 
