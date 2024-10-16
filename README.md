@@ -86,12 +86,15 @@ Os objetivos dos experimentos realizados são:
 
 ### Gráficos
   - Instância com 500 itens
+
 ![WhatsApp Image 2024-10-15 at 17 25 24](https://github.com/user-attachments/assets/d3c50d5e-ec48-4fd3-9fa3-0022277408c8)
 
   - Instância com 1000 itens
+    
 ![WhatsApp Image 2024-10-15 at 17 26 03](https://github.com/user-attachments/assets/7170d246-cb17-4700-aab3-e77b2b80b624)
 
   - Instância com 40 itens
+    
 ![WhatsApp Image 2024-10-15 at 17 28 57](https://github.com/user-attachments/assets/9c39cebd-ce18-4c13-8acb-c8a76193bcf4)
 
   
