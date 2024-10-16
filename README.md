@@ -49,16 +49,23 @@ Os objetivos dos experimentos realizados são:
 - **Justificativa das Escolhas:**
   - As escolhas dos parâmetros são baseadas em referências da literatura e experimentos iniciais. Por exemplo, um **tamanho de população** maior pode explorar melhor o espaço de busca, enquanto **taxas de cruzamento** mais altas tendem a favorecer a intensificação (explorar boas soluções) e **taxas de mutação** mais baixas garantem que o algoritmo não se distancie demais das soluções boas. O **número de gerações** foi ajustado com base nos testes iniciais, equilibrando qualidade de solução e tempo de execução.
 
-#### Simulated Annealing + Bisecção
+#### Simulated Annealing + Método de Bisecção
 - **Parâmetros Utilizados:**
   - **Temperatura inicial**
   - **Taxa de resfriamento**
   - **Critério de parada**
-  - **Taxa de mutação**
   - **Método de bisecção**
 
 - **Justificativa das Escolhas:**
+  - A criação deste algoritmo(durante o desafio) partiu da curiosidade de testar uma ideia que surgiu. Ela consistiu em unir a lógica do SA(aceita soluções não apenas com base na sua qualidade mas também na temperatura atual) juntamente com o Método de Bisecção que divide o campo da solução em duas metades e decide se a solução está na esquerda ou na direita, e repete o processo recursivamente.
+  - A ideia do algoritmo foi feita da suscintamente da seguinte forma:
+  -- *1* O Método de Bisecção serve para testar a melhor quantidade de caixas
+  -- *2* Na função de try_packs(função para avaliar se a melhor solução está no bloco da direita ou da esquerda) para uma quantidade de caixas atual, é testado se a melhor configuração de itens está dentro ou não de um alcance de aceitação da quantidade atual de caixas atual dependendo da temperatura atual do sistema
+    
   - O **Simulated Annealing** funciona com base no princípio do resfriamento gradual para escapar de mínimos locais. A escolha dos parâmetros foi guiada pela necessidade de **exploração** no início (temperatura alta), seguida de **intensificação** na busca (temperatura baixa). O uso da **bisecção** melhora a eficiência, ajustando o processo de busca. As taxas de cruzamento e mutação são menores, porque o foco do SA é ajustar pequenas variações de forma progressiva, ao contrário do GA, que depende de uma diversidade maior de soluções.
+
+- Ponto positivo do algoritmo: Convergiu rapidamente para uma solução próxima da esperada(com um desvio máximo de 59 caixas no caso de teste com 5245 itens. Ou seja, a solução esperada = 2099, solução retornada = 2158)
+- Ponto negativo do algoritmo: Com o código atual foi possível encontrar a quantidade aproximada de caixas, contudo não foi possível encontrar a configuração de itens de cada caixa
 
 ### Instâncias de Teste
 
@@ -80,8 +87,11 @@ Os objetivos dos experimentos realizados são:
 ### Gráficos
 
 ![WhatsApp Image 2024-10-15 at 17 25 24](https://github.com/user-attachments/assets/d3c50d5e-ec48-4fd3-9fa3-0022277408c8)
+  - Instância com 500 itens
 ![WhatsApp Image 2024-10-15 at 17 26 03](https://github.com/user-attachments/assets/7170d246-cb17-4700-aab3-e77b2b80b624)
+  - Instância com 1000 itens
 ![WhatsApp Image 2024-10-15 at 17 28 57](https://github.com/user-attachments/assets/9c39cebd-ce18-4c13-8acb-c8a76193bcf4)
+  - Instância com 40 itens
 
 ## 5. Análise Comparativa
 
@@ -93,7 +103,7 @@ Os objetivos dos experimentos realizados são:
 ### Comparação com Soluções Ótimas ou Heurísticas
 
 - **Soluções de Referência:**
-  Utilizamos o Gurobi, um solver de programação matemática de alto desempenho, para obter soluções ótimas conhecidas para o problema de bin packing. Essas soluções servem como referência para avaliar a eficácia dos algoritmos implementados.
+  Utilizamos o Gurobi, um solver de programação matemática de alto desempenho, para obter soluções ótimas conhecidas para o problema de bin packing para pequenas instâncias. Essas soluções servem como referência para avaliar a eficácia dos algoritmos implementados.
 
 - **Avaliação da Proximidade:**
   Analisamos a proximidade de cada algoritmo em relação à solução ótima obtida pelo Gurobi. Para essa avaliação, utilizamos o banco de dados BPPLIB, que contém instâncias de problemas de bin packing. A comparação nos permite identificar quão próximos os resultados dos algoritmos Cuckoo Search e Algoritmo Genético estão das soluções ótimas, além de fornecer uma perspectiva sobre a eficiência e a eficácia das abordagens heurísticas em relação às soluções exatas.
