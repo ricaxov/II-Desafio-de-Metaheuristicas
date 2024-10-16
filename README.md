@@ -103,7 +103,7 @@ Os objetivos dos experimentos realizados são:
 ### Comparação com Soluções Ótimas ou Heurísticas
 
 - **Soluções de Referência:**
-  Utilizamos o Gurobi, um solver de programação matemática de alto desempenho, para obter soluções ótimas conhecidas para o problema de bin packing para pequenas instâncias. Essas soluções servem como referência para avaliar a eficácia dos algoritmos implementados.
+  Utilizamos o Gurobi, um solver de programação matemática de alto desempenho, para obter soluções ótimas conhecidas para o problema de bin packing para pequenas instâncias e uso do benchmark do site unibe, principalmente dos arquivos do Falkenauer. Essas soluções serviram como referência para avaliar a eficácia dos algoritmos implementados.
 
 - **Avaliação da Proximidade:**
   Analisamos a proximidade de cada algoritmo em relação à solução ótima obtida pelo Gurobi. Para essa avaliação, utilizamos o banco de dados BPPLIB, que contém instâncias de problemas de bin packing. A comparação nos permite identificar quão próximos os resultados dos algoritmos Cuckoo Search e Algoritmo Genético estão das soluções ótimas, além de fornecer uma perspectiva sobre a eficiência e a eficácia das abordagens heurísticas em relação às soluções exatas.
@@ -120,7 +120,7 @@ Os objetivos dos experimentos realizados são:
 ### Interpretação
 
 - **Significado dos Resultados:**
-  Os resultados indicam que os desempenhos dos algoritmos utilizados foram satisfatórios, considerando os tempos de execução envolvidos. 
+  Os resultados indicam que os desempenhos dos algoritmos utilizados foram satisfatórios em algumas instancias, contudo para instancias maiores nos algoritmos de GA e Cuckoo foi necessário diminuir o numero de gerações considerando os tempos de execução. 
 
 - **Padrões Observados:**
   Identificamos padrões consistentes nas execuções, onde o desempenho dos algoritmos tende a melhorar à medida que o tamanho do problema diminui. Além disso, a variação nos resultados entre as diferentes execuções sugere que a aleatoriedade dos algoritmos pode influenciar os resultados, mas ainda assim, mantém uma qualidade satisfatória.
@@ -129,6 +129,7 @@ Os objetivos dos experimentos realizados são:
 
 - **Qualidade das Soluções:**
   A qualidade das soluções geradas pode ser afetada pela escolha inadequada de hiperparâmetros e pela parametrização dos algoritmos. A seleção de parâmetros como taxa de mutação, número de gerações e tamanho da população teve um impacto significativo na eficiência e na eficácia dos algoritmos, indicando que uma otimização cuidadosa desses hiperparâmetros é essencial para melhorar os resultados.
+  Outro aspecto limitação é o tempo curto para testes mais apronfundados principalmente pra verificar a capacidade do SA+BS 
 
 ## 7. Comparação com Objetivos Iniciais
 
@@ -138,7 +139,7 @@ Os objetivos dos experimentos realizados são:
   Após a realização dos experimentos, podemos afirmar que os objetivos propostos foram, em grande parte, atingidos. Os algoritmos implementados foram capazes de encontrar soluções competitivas para o problema de bin packing, e a comparação com soluções ótimas revelou a eficácia das abordagens adotadas.
 
 - **Justificativas:**
-  Os objetivos foram alcançados principalmente devido à implementação cuidadosa dos algoritmos e à utilização do Gurobi como referência para soluções ótimas. No entanto, alguns objetivos poderiam ter sido melhor atingidos se tivéssemos realizado uma otimização mais rigorosa dos hiperparâmetros e explorado mais a hibridização entre os algoritmos.
+  Os objetivos foram alcançados principalmente devido à implementação cuidadosa dos algoritmos e à utilização do Gurobi como referência para pequenas instâncias e ao benchmark do site unibe para testar soluções ótimas. No entanto, alguns objetivos poderiam ter sido melhor atingidos se tivéssemos realizado uma otimização mais rigorosa dos hiperparâmetros e explorado mais a hibridização entre os algoritmos.
 
 ### Surpresas ou Descobertas
 
