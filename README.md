@@ -42,19 +42,21 @@ Os objetivos dos experimentos realizados são:
 
 #### Genetic Algorithm
 - **Parâmetros Utilizados:**
-  - **Tamanho da população**
-  - **Taxas de cruzamento e mutação**
-  - **Número de gerações**:
+  - **tamanho_populacao**
+  - **num_geracoes**:
+  - **prob_crossover**
+  - **prob_mutacao**
+  - **prob_inversao**
 
 - **Justificativa das Escolhas:**
   - As escolhas dos parâmetros são baseadas em referências da literatura e experimentos iniciais. Por exemplo, um **tamanho de população** maior pode explorar melhor o espaço de busca, enquanto **taxas de cruzamento** mais altas tendem a favorecer a intensificação (explorar boas soluções) e **taxas de mutação** mais baixas garantem que o algoritmo não se distancie demais das soluções boas. O **número de gerações** foi ajustado com base nos testes iniciais, equilibrando qualidade de solução e tempo de execução.
 
 #### Simulated Annealing + Método de Bisecção
 - **Parâmetros Utilizados:**
-  - **Temperatura inicial**
-  - **Taxa de resfriamento**
-  - **Critério de parada**
-  - **Método de bisecção**
+  - **Temperatura inicial/Delta (out)**
+  - **Taxa de resfriamento (cooling_rate)**
+  - **Critério de parada (r-l > 1, ou seja a bissecção para as iterações)**
+  - **Método de bisecção (numero de caixas atual(bins))**
 
 - **Justificativa das Escolhas:**
   - A criação deste algoritmo(durante o desafio) partiu da curiosidade de testar uma ideia que surgiu. Ela consistiu em unir a lógica do SA(aceita soluções não apenas com base na sua qualidade mas também na temperatura atual) juntamente com o Método de Bisecção que divide o campo da solução em duas metades e decide se a solução está na esquerda ou na direita, repetindo o processo recursivamente.
@@ -116,16 +118,16 @@ Os objetivos dos experimentos realizados são:
 ### Tempo de Execução
 | N    |Tempo(SA+BS)| Tempo (GA) | Tempo (CS)  |
 |------|------------|------------|-------------|
-| 500  |    1.1s    |            |   27.70s    |
-| 1000 |    2.5s    |            |  125.80s    |
-| 5245 | 12.700s    | 4140.20s   |     -       |
+| 500  |    1.1s    |    4.40s   |   27.70s    |
+| 1000 |    2.5s    |   16.40s   |  125.80s    |
+| 5245 | 12.700s    |  575.10s   |     -       |
 
-### Acurácia
+### Comparações
 | N    | Esperado |    (SA+BS)    |     (GA)   |     (CS)    |
 |------|----------|---------------|------------|-------------|
-| 500  |   206    |     210       |            |    216      |
-| 1000 |   406    |     412       |            |    424      |
-| 5245 |  2099    |    2153       |            |             |
+| 500  |   206    |     210       |    210     |    216      |
+| 1000 |   406    |     412       |    411     |    424      |
+| 5245 |  2099    |    2153       |   2134     |     -       |
 
 
 ## 6. Discussão dos Resultados
