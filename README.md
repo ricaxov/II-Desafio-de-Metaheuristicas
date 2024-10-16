@@ -114,11 +114,22 @@ Os objetivos dos experimentos realizados são:
   Analisamos a proximidade de cada algoritmo em relação à solução ótima obtida pelo Gurobi. Para essa avaliação, utilizamos o banco de dados BPPLIB, que contém instâncias de problemas de bin packing. A comparação nos permite identificar quão próximos os resultados dos algoritmos Cuckoo Search e Algoritmo Genético estão das soluções ótimas, além de fornecer uma perspectiva sobre a eficiência e a eficácia das abordagens heurísticas em relação às soluções exatas.
 
 ### Tempo de Execução
-| N    | Tempo (SA) | Tempo (GA) | Tempo (CS)  |
+| N    |Tempo(SA+BS)| Tempo (GA) | Tempo (CS)  |
 |------|------------|------------|-------------|
-| 250  | 0.123s     | 0.098s     |  0.910s     |
-| 500  | 0.234s     | 0.210s     |  3.200s     |
-| 1000 | 0.450s     | 0.390s     | 65.000s     |
+| 250  |            |            |  0.910s     |
+| 500  |            |            |  3.200s     |
+| 1000 |            |            | 65.000s     |
+| 5245 | 12.700s    | 4140.20s   | 65.000s     |
+
+### Acurácia
+| N    | Esperado | Acerto(SA+BS) | Acerto(GA) | Acerto(CS)  |
+|------|----------|---------------|------------|-------------|
+| 250  |          |               |            |             |
+| 500  |          |               |            |             |
+| 1000 |          |               |            |             |
+| 5245 |          |               |            |             |
+
+
 
 ## 6. Discussão dos Resultados
 
