@@ -119,7 +119,7 @@ Os objetivos dos experimentos realizados são:
 | 250  |            |            |  0.910s     |
 | 500  |            |            |  3.200s     |
 | 1000 |            |            | 65.000s     |
-| 5245 | 12.700s    | 4140.20s   | 65.000s     |
+| 5245 | 12.700s    | 4140.20s   |     -       |
 
 ### Acurácia
 | N    | Esperado | Acerto(SA+BS) | Acerto(GA) | Acerto(CS)  |
