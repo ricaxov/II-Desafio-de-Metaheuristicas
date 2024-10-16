@@ -121,12 +121,11 @@ Os objetivos dos experimentos realizados são:
 | 5245 | 12.700s    | 4140.20s   |     -       |
 
 ### Acurácia
-| N    | Esperado | Acerto(SA+BS) | Acerto(GA) | Acerto(CS)  |
+| N    | Esperado |    (SA+BS)    |     (GA)   |     (CS)    |
 |------|----------|---------------|------------|-------------|
 | 500  |   206    |     210       |            |    216      |
 | 1000 |   406    |     412       |            |    424      |
-| 5245 |  2099    |               |            |             |
-
+| 5245 |  2099    |    2153       |            |             |
 
 
 ## 6. Discussão dos Resultados
