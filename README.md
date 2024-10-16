@@ -57,7 +57,7 @@ Os objetivos dos experimentos realizados são:
   - **Método de bisecção**
 
 - **Justificativa das Escolhas:**
-  - A criação deste algoritmo(durante o desafio) partiu da curiosidade de testar uma ideia que surgiu. Ela consistiu em unir a lógica do SA(aceita soluções não apenas com base na sua qualidade mas também na temperatura atual) juntamente com o Método de Bisecção que divide o campo da solução em duas metades e decide se a solução está na esquerda ou na direita, e repete o processo recursivamente.
+  - A criação deste algoritmo(durante o desafio) partiu da curiosidade de testar uma ideia que surgiu. Ela consistiu em unir a lógica do SA(aceita soluções não apenas com base na sua qualidade mas também na temperatura atual) juntamente com o Método de Bisecção que divide o campo da solução em duas metades e decide se a solução está na esquerda ou na direita, repetindo o processo recursivamente.
   - A ideia do algoritmo foi feita da suscintamente da seguinte forma:
   -- *1* O Método de Bisecção serve para testar a melhor quantidade de caixas
   -- *2* Na função de try_packs(função para avaliar se a melhor solução está no bloco da direita ou da esquerda) para uma quantidade de caixas atual, é testado se a melhor configuração de itens está dentro ou não de um alcance de aceitação da quantidade atual de caixas atual dependendo da temperatura atual do sistema
